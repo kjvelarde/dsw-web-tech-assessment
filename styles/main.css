@@ -1,0 +1,196 @@
+/* devnote: 
+BEM would highly benefit from SCSS. 
+Bootstrap has been added to reduce redundant layout related style classes - flexbox
+FontAwesome for some icons
+ */
+
+@font-face {
+  font-family: p22;
+  src: url(../fonts/P22JohnstonUndergroundRegularA.woff);
+}
+
+body {
+  font-size: 12px;
+  font-family: p22;
+}
+
+.container {
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  max-width: 90%;
+}
+
+/* header */
+
+.header__logo {
+  height: 3.5em;
+  width: 8em;
+  margin-top: 0.7em;
+  margin-left: 1em;
+}
+
+.header__account,
+.header__store,
+.header__search,
+.header__bag,
+.header__shop {
+  height: 5em;
+  width: 5em;
+  margin: 0 15px;
+}
+
+.header img {
+  cursor: pointer;
+}
+
+.header img:hover:before {
+  border-bottom: solid 2px black;
+  position: absolute;
+  bottom: 0;
+}
+
+/* nav */
+.nav {
+  padding: 1.5em;
+  border-bottom: solid rgba(0, 0, 0, 0.1) 2px;
+}
+
+.nav__item {
+  text-transform: uppercase;
+  text-align: left;
+  padding-right: 2em;
+  font-weight: 500;
+}
+
+/* description */
+.description {
+  padding: 2em;
+  padding-bottom: 0;
+}
+
+.description__text {
+  text-align: center;
+}
+
+/* product:header */
+.product__header {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding: 1em 0;
+}
+
+.product__header > .col-md-6 {
+  padding: 2em;
+}
+
+.product__header__title {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.product__header__pagenumber--active {
+  text-decoration: underline;
+}
+
+.product__header__pagination > i {
+  color: lightgray;
+}
+
+.product__header__today__label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.product__header__changestore__btn {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.product__header__filter__btn,
+.product__header__sort__btn {
+  margin-right: 1em;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5em;
+  border: none;
+}
+
+.product__header__grid__btn {
+  background: white;
+  border: solid 1px black;
+}
+
+/* product:content */
+.product__content__item {
+  border: solid 1px rgba(182, 182, 182, 0.1);
+}
+.product__content__item > span,
+.product__content__item > b {
+  display: block;
+  text-transform: uppercase;
+}
+
+.product__content__item__img {
+  width: 100%;
+}
+
+.product__content__item__rating {
+  color: lightgray;
+}
+
+.product__content__item__rating--active {
+  color: orange;
+}
+
+.product__content__item__color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  line-height: 15px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+.product__content__item__color--active {
+  border: black solid 1px;
+  content: 'x';
+}
+
+/* floating buttons */
+.floating__buttons {
+  position: fixed;
+  bottom: 5px;
+  right: 0;
+  text-align: center;
+  color: gray;
+  box-shadow: 0 5px 5px lightgray;
+  cursor: pointer;
+  width: 75px;
+  background: white;
+}
+
+.floating__buttons:hover {
+  border: solid black 1px;
+}
+
+.floating__buttons__top {
+  border-bottom: solid lightgray 1px;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  .product__header__filter__btn,
+  .product__header__sort__btn {
+    text-align: left;
+    margin-left: 5px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}
