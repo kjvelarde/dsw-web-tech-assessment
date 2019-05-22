@@ -1,0 +1,209 @@
+<!-- 
+devnote: 
+Author: Karl James Velarde
+Description: DSW kata
+Angular 1.6.x 
+ -->
+<html ng-app="app" lang="en">
+  <head>
+    <title>DSW</title>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="./styles/main.css" rel="stylesheet" />
+  </head>
+
+  <body ng-controller="mainCtrl">
+    <div class="row container">
+      <div class="col">
+        <!-- header -->
+        <div class="row header">
+          <div class="col-2 d-md-none order-1">
+            <img src="./images/shop.png" class="header__shop" />
+          </div>
+          <div class="col-3 col-md-8 order-3 order-md-1 pl-md-5">
+            <img src="./images/logo.png" class="header__logo" />
+          </div>
+          <div class="col-2 col-md-1 order-4 order-md-2">
+            <img src="./images/account.gif" class="header__account" />
+          </div>
+          <div class="col-2 col-md-1 d-none d-md-flex order-md-3">
+            <img src="./images/store.gif" class="header__store" />
+          </div>
+          <div class="col-2 col-md-1  order-2  order-md-4">
+            <img src="./images/search.gif" class="header__search" />
+          </div>
+          <div class="col-2 col-md-1 order-5 order-md-5">
+            <img src="./images/bag.gif" class="header__bag" />
+          </div>
+        </div>
+        <!-- /header -->
+
+        <!-- nav -->
+        <ul
+          class="nav d-none d-md-flex align-items-start justify-content-start"
+        >
+          <li class="nav__item" ng-repeat="navItem in menu">{{ navItem }}</li>
+        </ul>
+        <!-- /nav -->
+
+        <!-- description -->
+        <div class="row description justify-content-center">
+          <div class="col col-md-10">
+            <p class="description__text">
+              Shop for men's oxford shoes online at DSW, where we carry a
+              variety of dress and casual oxford styles such as wingtips and cap
+              toe shoes in leather, suede, and other materials.
+            </p>
+          </div>
+        </div>
+
+        <!-- /description -->
+
+        <!-- product:header -->
+        <div class="row product__header">
+          <div class="col-md-7">
+            <h2 class="product__header__title">Men's Oxfords & Lace-ups</h2>
+            <span class="product__header__pagination"
+              >Showing 1-{{ pageItemCount }} of {{ totalCount }} items
+              <i class="fa fa-chevron-left"></i>
+              <span class="product__header__pagenumber--active">1</span>
+              <i class="fa fa-chevron-right"></i>
+            </span>
+
+            <hr class="d-md-none" />
+          </div>
+
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col-md-4">
+                <input
+                  type="checkbox"
+                  id="getToday"
+                  class="product__header__today__cbox"
+                />
+                <label for="getToday" class="product__header__today__label"
+                  >Need It Today?</label
+                >
+              </div>
+
+              <div class="col-md">
+                Available at Easton
+                <span class="product__header__changestore__btn"
+                  >Change Store</span
+                >
+              </div>
+            </div>
+            <div class="row">
+              <input
+                type="button"
+                class="col product__header__filter__btn"
+                value="Filter"
+              />
+
+              <input
+                type="button"
+                class="col product__header__sort__btn"
+                value="Sort By: Featured"
+              />
+
+              <button
+                type="button"
+                class="col-2 col-md-1 product__header__grid__btn"
+              >
+                <i class="fa fa-th fa-2x"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- /product:header -->
+
+        <!-- product:content -->
+        <div class="row product__content">
+          <div
+            class="col-6 col-md-3 product__content__item"
+            ng-repeat="item in data"
+          >
+            <img
+              src="images/products/{{ item.id }}.jpg"
+              class="product__content__item__img"
+            />
+            <b class="product__content__item__brand">{{ item.brand }}</b>
+            <span class="product__content__item__name">{{ item.name }}</span>
+            <b class="product__content__item__price">{{
+              item.price | currency
+            }}</b>
+            <div class="product__content__item__comp">
+              Comp. value <br class="d-md-none" />
+              <span class="product__content__item__comp_price">
+                {{ item.compValue | currency }}</span
+              >
+            </div>
+
+            <span class="product__content__item__rating">
+              <i
+                class="fa fa-star"
+                ng-class="{'product__content__item__rating--active': item.rating > 0}"
+              ></i>
+              <i
+                class="fa fa-star"
+                ng-class="{'product__content__item__rating--active': item.rating > 1}"
+              ></i>
+              <i
+                class="fa fa-star"
+                ng-class="{'product__content__item__rating--active': item.rating > 2}"
+              ></i>
+              <i
+                class="fa fa-star"
+                ng-class="{'product__content__item__rating--active': item.rating > 3}"
+              ></i>
+              <i
+                class="fa fa-star"
+                ng-class="{'product__content__item__rating--active': item.rating > 4}"
+              ></i>
+            </span>
+            <span class="product__content__item__colors">
+              <span
+                class="product__content__item__color"
+                ng-style="{'background-color': color.displayName }"
+                ng-class="{'product__content__item__color--active': color.id === item.activeColor}"
+                ng-repeat="color in item.colors"
+              ></span>
+            </div>
+          </div>
+        </div>
+        <!-- product:content -->
+
+        <!-- floating-buttons -->
+        <div class="row floating__buttons">
+          <div class="col-md-12 floating__buttons__top">
+            <i class="fa fa-chevron-up"></i> <br />
+            TOP
+          </div>
+          <div class="col-md-12 floating__buttons__filter">
+            <i class="fa fa-filter"></i> <br />
+            FILTER
+          </div>
+        </div>
+        <!-- /floating-buttons -->
+      </div>
+    </div>
+  </body>
+
+  <!-- scripts -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.10/angular.min.js"
+    integrity="sha256-sk9OZF24HqebsmeR4sKCxeMatokA7KtIK4hHO60qm54="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./scripts/main.js"></script>
+</html>

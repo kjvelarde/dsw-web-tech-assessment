@@ -1,180 +1,180 @@
 [
-	{
-		id: 1,
-		brand: "Aston Grey",
-		name: "Proiria Cap Toe Oxford",
-		price: 99.99,
-		compValue: 180,
-		rating: null,
-		activeColor: 200,
-		colors: [
-			{
-				id: 200,
-				displayName: "brown"
-			}
-		]
-	},
-	{
-		id: 2,
-		brand: "CS Tandem",
-		name: "Ryder Oxford",
-		price: 79.99,
-		compValue: 135,
-		rating: 4.5,
-		activeColor: 100,
-		colors: [
-			{
-				id: 100,
-				displayName: "black"
-			}
-		]
-	},
-	{
-		id: 3,
-		brand: "Bullboxer",
-		name: "Skyll Oxford",
-		price: 99.99,
-		compValue: 125,
-		rating: 5,
-		activeColor: 100,
-		colors: [
-			{
-				id: 100,
-				displayName: "black"
-			},
-			{
-				id: 200,
-				displayName: "brown"
-			}
-		]
-	},
-	{
-		id: 4,
-		brand: "Aston Grey",
-		name: "Edoessa Wingtip Oxford",
-		price: 89.99,
-		compValue: 180,
-		rating: 4.5,
-		activeColor: 100,
-		colors: [
-			{
-				id: 200,
-				displayName: "brown"
-			},
-			{
-				id: 100,
-				displayName: "black"
-			}
-		]
-	},
-	{
-		id: 5,
-		brand: "Florsheim",
-		name: "Postino Cap Toe Oxford",
-		price: 89.99,
-		compValue: 110,
-		rating: 5,
-		activeColor: 200,
-		colors: [
-			{
-				id: 200,
-				displayName: "brown"
-			},
-			{
-				id: 100,
-				displayName: "black"
-			}
-		]
-	},
-	{
-		id: 6,
-		brand: "Cole Haan",
-		name: "Original Grand Stitchlite Wingtip Oxford",
-		price: 139.99,
-		compValue: null,
-		rating: 5,
-		activeColor: 300,
-		colors: [
-			{
-				id: 300,
-				displayName: "gray"
-			}
-		]
-	},
-	{
-		id: 7,
-		brand: "Steve Madden",
-		name: "Biltmore Oxford",
-		price: 79.99,
-		compValue: 110,
-		rating: 4,
-		activeColor: 100,
-		colors: [
-			{
-				id: 100,
-				displayName: "black"
-			},
-			{
-				id: 200,
-				displayName: "brown"
-			}
-		]
-	},
-	{
-		id: 8,
-		brand: "Stacy Adams",
-		name: "Barclay Oxford",
-		price: 79.99,
-		compValue: 95,
-		rating: 3,
-		activeColor: 200,
-		colors: [
-			{
-				id: 200,
-				displayName: "brown"
-			},
-			{
-				id: 100,
-				displayName: "black"
-			}
-		]
-	},
-	{
-		id: 9,
-		brand: "Cole Haan",
-		name: "Original Grand Stitchlite Wingtip Oxford",
-		price: 139.99,
-		compValue: null,
-		rating: 4,
-		activeColor: 100,
-		colors: [
-			{
-				id: 100,
-				displayName: "black"
-			},
-			{
-				id: 400,
-				displayName: "blue"
-			}
-		]
-	},
-	{
-		id: 10,
-		brand: "Seven 91",
-		name: "Proiria Cap Toe Oxford",
-		price: 59.99,
-		compValue: 80,
-		rating: 5,
-		activeColor: 400,
-		colors: [
-			{
-				id: 300,
-				displayName: "gray"
-			},
-			{
-				id: 400,
-				displayName: "blue"
-			}
-		]
-	}
+  {
+    "id": 1,
+    "brand": "Aston Grey",
+    "name": "Proiria Cap Toe Oxford",
+    "price": 99.99,
+    "compValue": 180,
+    "rating": null,
+    "activeColor": 200,
+    "colors": [
+      {
+        "id": 200,
+        "displayName": "brown"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "brand": "CS Tandem",
+    "name": "Ryder Oxford",
+    "price": 79.99,
+    "compValue": 135,
+    "rating": 4.5,
+    "activeColor": 100,
+    "colors": [
+      {
+        "id": 100,
+        "displayName": "black"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "brand": "Bullboxer",
+    "name": "Skyll Oxford",
+    "price": 99.99,
+    "compValue": 125,
+    "rating": 5,
+    "activeColor": 100,
+    "colors": [
+      {
+        "id": 100,
+        "displayName": "black"
+      },
+      {
+        "id": 200,
+        "displayName": "brown"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "brand": "Aston Grey",
+    "name": "Edoessa Wingtip Oxford",
+    "price": 89.99,
+    "compValue": 180,
+    "rating": 4.5,
+    "activeColor": 100,
+    "colors": [
+      {
+        "id": 200,
+        "displayName": "brown"
+      },
+      {
+        "id": 100,
+        "displayName": "black"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "brand": "Florsheim",
+    "name": "Postino Cap Toe Oxford",
+    "price": 89.99,
+    "compValue": 110,
+    "rating": 5,
+    "activeColor": 200,
+    "colors": [
+      {
+        "id": 200,
+        "displayName": "brown"
+      },
+      {
+        "id": 100,
+        "displayName": "black"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "brand": "Cole Haan",
+    "name": "Original Grand Stitchlite Wingtip Oxford",
+    "price": 139.99,
+    "compValue": null,
+    "rating": 5,
+    "activeColor": 300,
+    "colors": [
+      {
+        "id": 300,
+        "displayName": "gray"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "brand": "Steve Madden",
+    "name": "Biltmore Oxford",
+    "price": 79.99,
+    "compValue": 110,
+    "rating": 4,
+    "activeColor": 100,
+    "colors": [
+      {
+        "id": 100,
+        "displayName": "black"
+      },
+      {
+        "id": 200,
+        "displayName": "brown"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "brand": "Stacy Adams",
+    "name": "Barclay Oxford",
+    "price": 79.99,
+    "compValue": 95,
+    "rating": 3,
+    "activeColor": 200,
+    "colors": [
+      {
+        "id": 200,
+        "displayName": "brown"
+      },
+      {
+        "id": 100,
+        "displayName": "black"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "brand": "Cole Haan",
+    "name": "Original Grand Stitchlite Wingtip Oxford",
+    "price": 139.99,
+    "compValue": null,
+    "rating": 4,
+    "activeColor": 100,
+    "colors": [
+      {
+        "id": 100,
+        "displayName": "black"
+      },
+      {
+        "id": 400,
+        "displayName": "blue"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "brand": "Seven 91",
+    "name": "Proiria Cap Toe Oxford",
+    "price": 59.99,
+    "compValue": 80,
+    "rating": 5,
+    "activeColor": 400,
+    "colors": [
+      {
+        "id": 300,
+        "displayName": "gray"
+      },
+      {
+        "id": 400,
+        "displayName": "blue"
+      }
+    ]
+  }
 ]
